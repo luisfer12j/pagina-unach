@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unach</title>
+    <!-- CSS - Bootsrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./sources/images/icon-page.jpg" />
+</head>
+
+<body class="">
+    <!-- Header -->
+    <div class="container-xl header d-flex justify-content-between align-items-center">
+        <img src="https://www.unach.edu.ec/wp-content/uploads/2021/03/logo_unach_2021-02.png" class="img-fluid h-100"
+            alt="Logo-Unach" />
+        <!-- <img src="sources/images/vinculacion__1_-removebg-preview.png" alt=""> -->
+        <!-- Modals LOGIN -->
+        <div>
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    Iniciar sesion
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Iniciar sesion
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">...</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                    Iniciar sesion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#bibliotecaModal">
+                    <i class="fa-solid fa-book-open"></i>
+                    Biblioteca
+                </button>
+                <div class="modal fade" id="bibliotecaModal" tabindex="-1" aria-labelledby="bibliotecaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bibliotecaModalLabel">
+                                    Biblioteca
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-info">Pagina en desarrollo</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#correoModal">
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo institucional
+                </button>
+                <div class="modal fade" id="correoModal" tabindex="-1" aria-labelledby="correoModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="correoModalLabel">Biblioteca</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-info">Pagina en desarrollo</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Drop Down NAV-VAR -->
+    <div class="container-fluid mt-2 nav-bar-container">
+        <div class="container-xl mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-evenly nav-bar">
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inicio
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item" id="btnInformacion" href="#">Informacion</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btnObjetivos" href="#">Objetivos de vinculacion</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Procesos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item" href="./public/datos.html">Datos</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="./public/informacion.html">Informacion</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="./public/registro.html">Entrega de certificados</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proyectos de las carreras
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Arquitectura</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Ingenieria Electronica y Telecomunicaciones</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ingenieria en TICS</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Indrutrial</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Civil</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Ingenieria Agroindustrial</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Ambiental</a></li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    Consultorio
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item" href="./public/consultorio.informacion.html">Informacion</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                    Seguimiento de proyectos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item" href="#">Proyectos de las carreras</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row oculto" id="informacion">
+            <h2 class="text-dark">Informacion</h2>
+            <div class="accordion" id="informacion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="informacionOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseMision" aria-expanded="true" aria-controls="collapseMision">
+                            Mision
+                        </button>
+                    </h2>
+                    <div id="collapseMision" class="accordion-collapse collapse show" aria-labelledby="informacionOne"
+                        data-bs-parent="#informacion">
+                        <div class="accordion-body">
+                            Fortalecer la articulación de la institución con los sectores
+                            sociales, productivos y culturales, por medio de programas y/o
+                            proyectos pertinentes de servicio comunitario con la
+                            participación activa de docentes y estudiantes correspondiendo a
+                            las necesidades expresadas por la comunidad, para aportar al
+                            desarrollo sustentable local, regional y nacional y contribuir
+                            al mejoramiento de la calidad de vida.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="informacionTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseVision" aria-expanded="false" aria-controls="collapseVision">
+                            Vision
+                        </button>
+                    </h2>
+                    <div id="collapseVision" class="accordion-collapse collapse" aria-labelledby="informacionTwo"
+                        data-bs-parent="#informacion">
+                        <div class="accordion-body">
+                            La Dirección de Vinculación con la Sociedad de la Universidad
+                            Nacional de Chimborazo será un referente institucional que
+                            contribuya a la formación holística del futuro profesional
+                            mediante una actitud ética, aportando al cambio de la Matriz
+                            Productiva y a la solución de problemas comunitarios con
+                            propuestas innovadoras multidisciplinarias, basadas en la
+                            práctica de su potencial académico e investigativo, en la
+                            búsqueda del bien común.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row oculto" id="objetivos">
+            <h2 class="text-dark">Objetivos</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGeneral" aria-expanded="true" aria-controls="collapseGeneral">
+                            Objetivo General
+                        </button>
+                    </h2>
+                    <div id="collapseGeneral" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Incrementar la Responsabilidad Social de la Universidad mediante
+                            la institucionalización de la Vinculación, la ejecución de
+                            Programas y proyectos sostenibles y la internacionalización.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEspecifico" aria-expanded="false"
+                            aria-controls="collapseEspecifico">
+                            Objetivo Especifico
+                        </button>
+                    </h2>
+                    <div id="collapseEspecifico" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            • Incrementar la distribución social del conocimiento mediante
+                            la educación continua y portafolio de consultorías <br />
+                            • Incrementar el fomento productivo de la Zona mediante el
+                            emprendimiento e innovación.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carrusel -->
+    <div class="container carrusel carousel-fade my-4">
+        <div id="carouselExampleIndicators" class="carousel carrusel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="https://www.unach.edu.ec/wp-content/uploads/1-13.jpg"
+                        class="d-block w-100 h-100 img-fluid contain align-selg-center" alt="..." />
+                </div>
+                <div class="carousel-item align-content-center h-100">
+                    <img src="https://www.unach.edu.ec/wp-content/uploads/2020/08/25an%CC%83os_c.jpg"
+                        class="d-block w-100 h-100 img-fluid contain" alt="..." />
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://i.ytimg.com/vi/U3WDYymhU-M/maxresdefault.jpg"
+                        class="d-block w-100 h-100 img-fluid contain" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- INICIO -->
+
+    <!-- CONSULTORIO -->
+    <!-- Informacion -->
+    <div class="container-lg">
+        <h2 class="my-5">Consultorio</h2>
+        <div class="row">
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria Elecronica y Telecomunicaciones</h3>
+                <div class="accordion accordion-flush" id="accordionElectronica">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseElectronicaOne" aria-expanded="false"
+                                aria-controls="flush-collapseElectronicaOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseElectronicaOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionElectronica">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Diseño e implementacion de un sistema autonomo para el
+                                            monitorio de variable ambientales basado en redes de
+                                            sensores que permita cuantificar el recurso agua, de la
+                                            provincia de Chimborazo en colaboracion con la Direccion
+                                            de Riego del Gad Provincial
+                                        </h5>
+                                        <p class="card-text">Mgs. Carlos Peñafiel</p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria en TICS</h3>
+                <div class="accordion accordion-flush" id="accordionTICS">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTICSOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTICSOne" aria-expanded="false"
+                                aria-controls="flush-collapseTICSOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTICSOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTICSOne" data-bs-parent="#accordionTICS">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Intervencion de las juntas de agua en las parroquias de
+                                            la provincia de Chimborazo a travez de soluciones
+                                            tecnologicos y de informacion para la optimizacion de
+                                            procesos de gestión y administración
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Marlon Javier Silva Castañeda
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTICSTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTICSTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTICSTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTICSTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTICSTwo" data-bs-parent="#accordionTICS">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Sistemas de Gestión de información que permitira el
+                                            analisis almacenamiento, procesamiento y monitoreo del
+                                            medio ambiente con el fin de generar estadisticas
+                                            óptimas en la toma de desiciones en la parroquia
+                                            Valparaiso y las comunidades de Ela carrera Ambato del
+                                            cantón Guano de la Provincia de chimborazo
+                                        </h5>
+                                        <p class="card-text">Dr. Hugo Humberto Paz León</p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria Industrial</h3>
+                <div class="accordion accordion-flush" id="accordionIndustrial">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingIndutsrialOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseIndustrialOne" aria-expanded="false"
+                                aria-controls="flush-collapseIndustrialOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseIndustrialOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingIndutsrialOne" data-bs-parent="#accordionIndustrial">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Diseño e implementacion de un sistema autonomo para el
+                                            monitorio de variable ambientales basado en redes de
+                                            sensores que permita cuantificar el recurso agua, de la
+                                            provincia de Chimborazo en colaboracion con la Direccion
+                                            de Riego del gad Provincia
+                                        </h5>
+                                        <p class="card-text">Mgs. Carlos Peñafiel</p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingIndustrialTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseIndustrialTwo" aria-expanded="false"
+                                aria-controls="flush-collapseIndustrialTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseIndustrialTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingIndustrialTwo" data-bs-parent="#accordionIndustrial">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Acesoramiento de un sistema de Gestion en seguridad y salud ocupacional que
+                                            la logra la disminucion y/o eliminacion de inseguridades, accidentes,
+                                            enfermedades ocupacionales y factores de riesgos ambientales dirigido al
+                                            personal administrativo y a grupos vulnerables tales como productores y
+                                            comerciantes en la limpiesa publica de productos Agricolas San Pedro de
+                                            Riobamba.
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Magdalena Paredes
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingIndustrialThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseIndustrialThree" aria-expanded="false"
+                                aria-controls="flush-collapseIndustrialThree">
+                                Proyecto 3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseIndustrialThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingIndustrialThree" data-bs-parent="#accordionIndustrial">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Diseño de un sistema de gestiòn de mantenimiento para los equpos e
+                                            infrestructura del Gobierno Autonomo Desentralizado Municipal del Canton
+                                            Guamote S
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Luis López
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria Civil</h3>
+                <div class="accordion accordion-flush" id="accordionCivil">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCivilOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseCivilOne" aria-expanded="false"
+                                aria-controls="flush-collapseCivilOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCivilOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingCivilOne" data-bs-parent="#accordionCivil">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Apoyo técnico en la gestión de conservacion de carreteras rurales de los
+                                            cantones de Colta, Guano y Penipe en la provincia de Chimborazo
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Carlos Saldaña
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCivilTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseCivilTwo" aria-expanded="false"
+                                aria-controls="flush-collapseCivilTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCivilTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingCivilTwo" data-bs-parent="#accordionCivil">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Asesoramiento y Consultoria Gratuita en Materia de Seguridad, Tecnología,
+                                            Industria y Construcción a Personas en condiciones vulnerables, pequeños
+                                            productores y artesanos de la zona 3
+                                        </h5>
+                                        <p class="card-text">
+                                            Ing. Patricia Viñán
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCivilThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseCivilThree" aria-expanded="false"
+                                aria-controls="flush-collapseCivilThree">
+                                Proyecto 3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCivilThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingCivilThree" data-bs-parent="#accordionCivil">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Mejoramiento de viviendas en las parroquias rurales de los cantones Chambo,
+                                            Guano y Penipe de la provincia de Chimborazo
+                                        </h5>
+                                        <p class="card-text">
+                                            Ing. Tito Castillo
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria Agroindustrial</h3>
+                <div class="accordion accordion-flush" id="accordionAgro">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAgroOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAgroOne" aria-expanded="false"
+                                aria-controls="flush-collapseAgroOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAgroOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAgroOne" data-bs-parent="#accordionAgro">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Desarrollo de la capacidad de jóvenes indigenas emprendedores, especialmente
+                                            mujeres, para dar valor agregado a las materias primas agropecuarias, en las
+                                            comunidades de las provincias de Chimborazo y Bolivar
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Daniel Luna
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAgroTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAgroTwo" aria-expanded="false"
+                                aria-controls="flush-collapseAgroTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAgroTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAgroTwo" data-bs-parent="#accordionAgro">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Fortalecimiento de las capacidades y buenas practicas de granjas lecheras en
+                                            zonas rurales y comunidades del Canton Guaranda, Provincia de Bolivar
+                                        </h5>
+                                        <p class="card-text">
+                                            Mg. Luna Velasco Daniel Alejandro
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAgroThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAgroThree" aria-expanded="false"
+                                aria-controls="flush-collapseAgroThree">
+                                Proyecto 3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAgroThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAgroThree" data-bs-parent="#accordionAgro">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Fortalecimiento técnico y productivo a los productores minorista de lácteos
+                                            de la provincia de Chimborazo
+                                        </h5>
+                                        <p class="card-text">
+                                            MsC. Sebastián Guerrero
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAgroFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAgroFour" aria-expanded="false"
+                                aria-controls="flush-collapseAgroFour">
+                                Proyecto 4
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAgroFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAgroFour" data-bs-parent="#accordionAgro">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Asesoramiento y Consultoria Gratuita en Materia de Seguridad, Tecnología,
+                                            Industria y Construcción a Personas en condiciones vulnerables, pequeños
+                                            productores y artesanos de la zona 3
+                                        </h5>
+                                        <p class="card-text">
+                                            Ing. Patricia Viñán
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Ingenieria Ambiental</h3>
+                <div class="accordion accordion-flush" id="accordionAmbiental">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAmbientalOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAmbientalOne" aria-expanded="false"
+                                aria-controls="flush-collapseAmbientalOne">
+                                Proyecto 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAmbientalOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAmbientalOne" data-bs-parent="#accordionAmbiental">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Diseño e implementación de un sistema autónomo para el monitoreo de
+                                            variables ambientales basado en redes de sensores, que permitan cuantificar
+                                            el recurso agua, de las provincia de Chimborazo en colaboracion de la
+                                            Dirección de Riesgo del GAD Provincial
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Carlos Peñafiel
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAmbientalTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAmbientalTwo" aria-expanded="false"
+                                aria-controls="flush-collapseAmbientalTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAmbientalTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAmbientalTwo" data-bs-parent="#accordionAmbiental">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Intervencion de las juntas de agua en las parroquias de
+                                            la provincia de Chimborazo a travez de soluciones
+                                            tecnologicos y de informacion para la optimizacion de
+                                            procesos de gestión y administración
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Marlon Javier Silva Castañeda
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col alto-columna">
+                <h3 class="titulo-carrera">Arquitectura</h3>
+                <div class="accordion accordion-flush" id="accordionArquitectura">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingArquitecturaOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseArquitecturaOne" aria-expanded="false"
+                                aria-controls="flush-collapseArquitecturaOne">
+                                Proyecto1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseArquitecturaOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingArquitecturaOne" data-bs-parent="#accordionArquitectura">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Asesoria en la planificación y diseño urbano arquitectónico de los espacios
+                                            públicos, patrimoniales, de servicios y recreativos del canton Colta de la
+                                            Provincia de chimborazo
+                                        </h5>
+                                        <p class="card-text">
+                                            Mgs. Jackeline Gonzáles
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingArquitecturaTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseArquitecturaTwo" aria-expanded="false"
+                                aria-controls="flush-collapseArquitecturaTwo">
+                                Proyecto 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseArquitecturaTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingArquitecturaTwo" data-bs-parent="#accordionArquitectura">
+                            <div class="accordion-body">
+                                <div class="card border-0" style="width: 18rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title tema-proyecto">
+                                            Asesoramiento y Consultoria Gratuita en Materia de Seguridad, Tecnología,
+                                            Industria y Construcción a Personas en condiciones vulnerables, pequeños
+                                            productores y artesanos de la zona 3
+                                        </h5>
+                                        <p class="card-text">
+                                            Ing. Patricia Viñán
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Conocer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col alto-columna"></div>
+            <div class="col alto-columna"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Info -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-lg footer">
+            <div class="row">
+                <div class="col d-flex flex-column">
+                    <h2>Nuestro Campus</h2>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Norte</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Centro</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus La Dolorosa</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Guano</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2>Infraestructura</h2>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Escenario deportivos</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Escenarios culturales</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2>Contactos</h2>
+                    <p class="text-decoration-none fw-bold footer-color">
+                        Av. Antonio José de Sucre Km 1 1/2 vía a Guano Riobamba-Ecuador(593)
+                        3 3730880 Atención de: Lunes a Viernes de: 08h00 - 17h00
+                    </p>
+                    <a class="text-decoration-none fw-bold footer-color"
+                        href="https://www.unach.edu.ec/localizacion-en-el-mapa-ele/">Localizacion en el mapa</a>
+                    <div>
+                        <a href="https://www.facebook.com/unach.ec">
+                            <i class="fa-brands fa-square-facebook fs-2 footer-color"></i>
+                        </a>
+                        <a href="https://www.instagram.com/unach.ec/">
+                            <i class="fa-brands fa-square-instagram fs-2 footer-color"></i>
+                        </a>
+                        <a href="https://twitter.com/unach_ec?lang=es">
+                            <i class="fa-brands fa-square-twitter fs-2 footer-color"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS - Bootstrap -->
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5447326cc4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unach</title>
+    <!-- CSS - Bootsrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../sources/images/icon-page.jpg">
+</head>
+
+<body class="">
+    <!-- Header -->
+    <div class="container-xl header d-flex justify-content-between align-items-center">
+        <img src="https://www.unach.edu.ec/wp-content/uploads/2021/03/logo_unach_2021-02.png" class="img-fluid h-100"
+            alt="Logo-Unach" />
+        <!-- Modals LOGIN -->
+        <div>
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    Iniciar sesion
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Iniciar sesion
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">...</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                    Iniciar sesion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#bibliotecaModal">
+                    <i class="fa-solid fa-book-open"></i>
+                    Biblioteca
+                </button>
+                <div class="modal fade" id="bibliotecaModal" tabindex="-1" aria-labelledby="bibliotecaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bibliotecaModalLabel">
+                                    Biblioteca
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-info">Pagina en desarrollo</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex align-items-center me-4">
+                <button type="button" class="btn btn-primary btn-sm bg-transparent border-0 text-dark"
+                    data-bs-toggle="modal" data-bs-target="#correoModal">
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo institucional
+                </button>
+                <div class="modal fade" id="correoModal" tabindex="-1" aria-labelledby="correoModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="correoModalLabel">
+                                    Biblioteca
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-info">Pagina en desarrollo</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Drop Down NAV-VAR -->
+    <div class="container-fluid mt-2 nav-bar-container">
+        <div class="container-xl mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-evenly nav-bar">
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inicio
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" id="btnInformacion" href="../index.html">Inicio</a></li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Procesos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Datos</a></li>
+                    <li><a class="dropdown-item" href="./informacion.html">Informacion</a></li>
+                    <li><a class="dropdown-item" href="./registro.html">Entrega de certificados</a></li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proyectos de las carreras
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Arquitectura</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Electronica y Telecomunicaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria en TICS</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Indrutrial</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Civil</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Agroindustrial</a></li>
+                    <li><a class="dropdown-item" href="#">Ingenieria Ambiental</a></li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    Consultorio
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./consultorio.informacion.html">Informacion</a></li>
+                </ul>
+            </div>
+            <div class="col-auto dropdown">
+                <button class="btn btn-secondary dropdown-toggle rounded-pill button-nav" type="button"
+                    id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                    Seguimiento de proyectos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Proyectos de las carreras</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido-Datos -->
+    <div class="container-lg my-5">
+        <h1>Datos</h1>
+        <p>Ingenieria cuenta con un total de 16 proyectos distribuidos en 7 carreras</p>
+        <div class="container border border-dark mt-5">
+            <div class="row border border-dark">
+                <h3 class="col">Carreras</h3>
+                <h3 class="col">Num. de proyectos</h3>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria Electronica y Telecomunicaciones</h6>
+                <h6 class="col">1 Proyecto</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria en TICS</h6>
+                <h6 class="col">2 Proyectos</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria Industrial</h6>
+                <h6 class="col">3 Proyecto</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria Civil</h6>
+                <h6 class="col">3 Proyecto</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria Agroindustrial</h6>
+                <h6 class="col">4 Proyecto</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Ingenieria Ambiental</h6>
+                <h6 class="col">2 Proyecto</h6>
+            </div>
+            <div class="row border border-dark">
+                <h6 class="col">Arquitectura</h6>
+                <h6 class="col">2 Proyecto</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-lg footer">
+            <div class="row">
+                <div class="col d-flex flex-column">
+                    <h2>Nuestro Campus</h2>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Norte</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Centro</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus La Dolorosa</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Campus Guano</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2>Infraestructura</h2>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Escenario deportivos</a>
+                    <a class="text-decoration-none fw-bold footer-color" href="">Escenarios culturales</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2>Contactos</h2>
+                    <p class="text-decoration-none fw-bold footer-color">
+                        Av. Antonio José de Sucre Km 1 1/2 vía a Guano Riobamba-Ecuador(593)
+                        3 3730880 Atención de: Lunes a Viernes de: 08h00 - 17h00
+                    </p>
+                    <a class="text-decoration-none fw-bold footer-color"
+                        href="https://www.unach.edu.ec/localizacion-en-el-mapa-ele/">Localizacion en el mapa</a>
+                    <div>
+                        <a href="https://www.facebook.com/unach.ec">
+                            <i class="fa-brands fa-square-facebook fs-2 footer-color"></i>
+                        </a>
+                        <a href="https://www.instagram.com/unach.ec/">
+                            <i class="fa-brands fa-square-instagram fs-2 footer-color"></i>
+                        </a>
+                        <a href="https://twitter.com/unach_ec?lang=es">
+                            <i class="fa-brands fa-square-twitter fs-2 footer-color"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS - Bootstrap -->
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5447326cc4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
