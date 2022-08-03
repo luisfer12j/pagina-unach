@@ -9,7 +9,7 @@
     <!-- CSS - Bootsrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="icon" href="../sources/images/icon-page.jpg">
+    <link rel="icon" href="../sources/images/icon-page.jpg" />
 </head>
 
 <body class="">
@@ -17,6 +17,7 @@
     <div class="container-xl header d-flex justify-content-between align-items-center">
         <img src="https://www.unach.edu.ec/wp-content/uploads/2021/03/logo_unach_2021-02.png" class="img-fluid h-100"
             alt="Logo-Unach" />
+        <!-- <img src="sources/images/vinculacion__1_-removebg-preview.png" alt=""> -->
         <!-- Modals LOGIN -->
         <div>
             <div class="d-flex align-items-center me-4">
@@ -78,7 +79,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="d-flex align-items-center me-4">
@@ -92,9 +92,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="correoModalLabel">
-                                    Biblioteca
-                                </h5>
+                                <h5 class="modal-title" id="correoModalLabel">Biblioteca</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -109,11 +107,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-
     </div>
     <!-- Drop Down NAV-VAR -->
     <div class="container-fluid mt-2 nav-bar-container">
@@ -133,9 +128,15 @@
                     Procesos
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Datos</a></li>
-                    <li><a class="dropdown-item" href="./informacion.html">Informacion</a></li>
-                    <li><a class="dropdown-item" href="./registro.html">Entrega de certificados</a></li>
+                    <li>
+                        <a class="dropdown-item" href="../public/datos.html">Datos</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../public/informacion.html">Informacion</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../public/registro.html">Entrega de certificados</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-auto dropdown">
@@ -144,12 +145,16 @@
                     Proyectos de las carreras
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="./carreras.arquitectura.html">Arquitectura</a></li>
-                    <li><a class="dropdown-item" href="./carreras.electronica.html">Ingenieria Electronica y Telecomunicaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Arquitectura</a></li>
+                    <li>
+                        <a class="dropdown-item" href="./carreras.electronica.html">Ingenieria Electronica y Telecomunicaciones</a>
+                    </li>
                     <li><a class="dropdown-item" href="./carreras.tics.html">Ingenieria en TICS</a></li>
                     <li><a class="dropdown-item" href="./carreras.industrial.html">Ingenieria Indrutrial</a></li>
                     <li><a class="dropdown-item" href="./carreras.civil.html">Ingenieria Civil</a></li>
-                    <li><a class="dropdown-item" href="./carreras.agroindustrial.html">Ingenieria Agroindustrial</a></li>
+                    <li>
+                        <a class="dropdown-item" href="./carreras.agroindustrial.html">Ingenieria Agroindustrial</a>
+                    </li>
                     <li><a class="dropdown-item" href="./carreras.ambiental.html">Ingenieria Ambiental</a></li>
                 </ul>
             </div>
@@ -159,7 +164,9 @@
                     Consultorio
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="./consultorio.informacion.html">Informacion</a></li>
+                    <li>
+                        <a class="dropdown-item" href="../public/consultorio.informacion.html">Informacion</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-auto dropdown">
@@ -168,51 +175,138 @@
                     Seguimiento de proyectos
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Proyectos de las carreras</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Proyectos de las carreras</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- Contenido-Datos -->
+    <!-- INICIO -->
+    <!-- Proyectos-Arquitectura -->
     <div class="container-lg my-5">
-        <h1>Datos</h1>
-        <p>Ingenieria cuenta con un total de 16 proyectos distribuidos en 7 carreras</p>
-        <div class="container border border-dark mt-5">
-            <div class="row border border-dark">
-                <h3 class="col">Carreras</h3>
-                <h3 class="col">Num. de proyectos</h3>
+        <h2 class="my-5">Arquitectura</h2>
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">Proyecto 1</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Proyecto 2</button>
             </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria Electronica y Telecomunicaciones</h6>
-                <h6 class="col">1 Proyecto</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria en TICS</h6>
-                <h6 class="col">2 Proyectos</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria Industrial</h6>
-                <h6 class="col">3 Proyecto</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria Civil</h6>
-                <h6 class="col">3 Proyecto</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria Agroindustrial</h6>
-                <h6 class="col">4 Proyecto</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Ingenieria Ambiental</h6>
-                <h6 class="col">2 Proyecto</h6>
-            </div>
-            <div class="row border border-dark">
-                <h6 class="col">Arquitectura</h6>
-                <h6 class="col">2 Proyecto</h6>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="container">
+                        <h5>Asesoria en la planificación y diseño urbano arquitectónico de los espacios públicos,
+                            patrimoniales, de servicios y recreativos del canton Colta de la Provincia de chimborazo
+                        </h5>
+                        <div class="row">
+                            <h6 class="col-5">Coordinadora del proyecto</h6>
+                            <p class="col">Mgs. Jackeline Gonzáles</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Alcance territoral</h6>
+                            <p class="col">Cantonal</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Plazo de ejecucion</h6>
+                            <p class="col">64 meses</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. Docentes participantes</h6>
+                            <p class="col">60</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. de Estudiantes participantes</h6>
+                            <p class="col">500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="container">
+                        <h5>Asesoramiento y Consultoria Gratuita en Materia de Seguridad, Tecnología, Industria y Construcción a Personas en condiciones vulnerables, pequeños productores y artesanos de la zona 3
+                        </h5>
+                        <div class="row">
+                            <h6 class="col-5">Coordinadora del proyecto</h6>
+                            <p class="col">Ing. Patricia Viñán</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Alcance territoral</h6>
+                            <p class="col">Provincia: Chimborazo</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Plazo de ejecucion</h6>
+                            <p class="col">36 meses</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. Docentes participantes</h6>
+                            <p class="col">7</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. de Estudiantes participantes</h6>
+                            <p class="col">140 a 420</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="container">
+                        <h5>Asesoria en la planificación y diseño urbano arquitectónico de los espacios públicos,
+                            patrimoniales, de servicios y recreativos del canton Colta de la Provincia de chimborazo
+                        </h5>
+                        <div class="row">
+                            <h6 class="col-5">Coordinadora del proyecto</h6>
+                            <p class="col">Mgs. Jackeline Gonzáles</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Alcance territoral</h6>
+                            <p class="col">Cantonal</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Plazo de ejecucion</h6>
+                            <p class="col">64 meses</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. Docentes participantes</h6>
+                            <p class="col">60</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. de Estudiantes participantes</h6>
+                            <p class="col">500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="container">
+                        <h5>Asesoria en la planificación y diseño urbano arquitectónico de los espacios públicos,
+                            patrimoniales, de servicios y recreativos del canton Colta de la Provincia de chimborazo
+                        </h5>
+                        <div class="row">
+                            <h6 class="col-5">Coordinadora del proyecto</h6>
+                            <p class="col">Mgs. Jackeline Gonzáles</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Alcance territoral</h6>
+                            <p class="col">Cantonal</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">Plazo de ejecucion</h6>
+                            <p class="col">64 meses</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. Docentes participantes</h6>
+                            <p class="col">60</p>
+                        </div>
+                        <div class="row">
+                            <h6 class="col-5">No. de Estudiantes participantes</h6>
+                            <p class="col">500</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Info -->
     <!-- Footer -->
     <footer class="footer">
